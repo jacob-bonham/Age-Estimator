@@ -1,16 +1,13 @@
 :root{
-  --linen-color: #FAF0E6;
   --teal-color: #50a4ac;
   --deep-blue-color: #555796;
-  --salmon-pink-color: #FE9BA1;
-  --gold-web-golden-color: #FFD500;
 
   --background-color: var(--teal-color);
   --alt-background-color: var(--deep-blue-color);
   --button-color: #555796;
-  --alt-button-color: var(--orange-color);
-  --tag-color: var(--salmon-pink-color);
-  --button-hover-color: var(--orange-color);
+  --alt-button-color: var(--deep-blue-color);
+  --tag-color: var(--teal-color);
+  --button-hover-color: var(--deep-blue-color);
 }
 
 /******************************************
