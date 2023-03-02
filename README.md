@@ -1,4 +1,4 @@
-# AGE OF A NAME client
+# AGE OF A NAME
 Would you like to know the average age associated with a given name, for millions of names from around the globe? You've come to the right place. 
 
 ## How It's Made:
