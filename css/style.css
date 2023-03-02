@@ -1,13 +1,13 @@
 :root{
   --linen-color: #FAF0E6;
-  --blue-color: #1372ca;
-  --orange-color: #c97943;
+  --teal-color: #50a4ac;
+  --deep-blue-color: #555796;
   --salmon-pink-color: #FE9BA1;
   --gold-web-golden-color: #FFD500;
 
-  --background-color: var(--blue-color);
-  --alt-background-color: var(--orange-color);
-  --button-color: #FFF;
+  --background-color: var(--teal-color);
+  --alt-background-color: var(--deep-blue-color);
+  --button-color: #555796;
   --alt-button-color: var(--orange-color);
   --tag-color: var(--salmon-pink-color);
   --button-hover-color: var(--orange-color);
@@ -25,7 +25,7 @@
   box-sizing: border-box;
   font-weight: 100;
   font-family: 'Roboto', 'Roboto Slab', 'Lato', 'Helvetica Neue', sans-serif;
-  color: #c97943;
+  color: #373962;
   margin: 0;
 	font-size: 100%;
   min-width: 0;
@@ -210,7 +210,7 @@ li .fa-search{
   transition: none;
   justify-content:flex-start;
   list-style: none;
-  background-color: rgba(255, 81, 90, 0.30);
+  background-color: rgb(81 156 255 / 30%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border:1px solid rgba(255, 255, 255, 0.20);
@@ -330,7 +330,7 @@ input {
   font-weight: 700;
   font-size: 1.5rem;
   padding: 15px 30px;
-  border-radius: 15px;
+  border-radius: 0px;
   background-color: var(--alt-button-color);
   color: white;
   margin-top: 15px;
