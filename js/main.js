@@ -92,14 +92,13 @@ const fetchData = (url, callback) => {
 }
 
 //newfunction
-//newfunction
 const nameForm = document.getElementById('nameForm');
 nameForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let name = document.getElementById("name").value;
   let country = document.getElementById("country").value;
-
-  if (name !== "") {
+  
+  if (country === "") {
     fetch(`https://api.agify.io?name=${name}`)
       .then(response => response.json())
       .then(data => {
@@ -113,23 +112,17 @@ nameForm.addEventListener("submit", (e) => {
         console.log(`error ${err}`);
       });
   } else {
-    list.innerHTML = "";
-  }
-
-  if (country !== "") {
-    fetch(`https://api.agify.io?country=${country}`)
+    fetch(`https://api.agify.io?name=${name}&country=${country}`)
       .then(response => response.json())
       .then(data => {
         list.innerHTML = `
           <li class="card-container">
-            <p>${country}.</p>
+            <p>${name} is ${data.age} year(s) old in ${country}.</p>
           </li>
         `;
       })
       .catch(err => {
         console.log(`error ${err}`);
       });
-  } else {
-    list.innerHTML = "";
   }
 });
