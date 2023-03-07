@@ -121,7 +121,7 @@ nameForm.addEventListener("submit", (e) => {
       if (data.age === null) {
         list.innerHTML = `
           <li class="card-container">
-            <p>Having trouble? Make sure your input matches the ISC country codes: <a href="https://agify.io/our-data" target="_blank">https://agify.io/our-data</a></p>
+            <p>Having trouble? Make sure your input matches one of the names on the ISC country list: <a href="https://agify.io/our-data" target="_blank">https://agify.io/our-data</a></p>
           </li>
         `;
       } else {
