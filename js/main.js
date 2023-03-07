@@ -112,22 +112,30 @@ nameForm.addEventListener("submit", (e) => {
         console.log(`error ${err}`);
       });
   //edit:
-  } else {
-    // Convert country name to ISO 3166-1 alpha-2 code
-    const countryCode = countryCodes[country];
-    fetch(`https://api.agify.io?name=${name}&country_id=${countryCode}`)
-      .then(response => response.json())
-      .then(data => {
+} else {
+  // Convert country name to ISO 3166-1 alpha-2 code
+  const countryCode = countryCodes[country];
+  fetch(`https://api.agify.io?name=${name}&country_id=${countryCode}`)
+    .then(response => response.json())
+    .then(data => {
+      if (data.age === null) {
+        list.innerHTML = `
+          <li class="card-container">
+            <p>Having trouble? Make sure your input matches the ISC country codes: <a href="https://agify.io/our-data" target="_blank">https://agify.io/our-data</a></p>
+          </li>
+        `;
+      } else {
         list.innerHTML = `
           <li class="card-container">
             <p>${name} is ${data.age} year(s) old in ${country}.</p>
           </li>
         `;
-      })
-      .catch(err => {
-        console.log(`error ${err}`);
-      });
-  }
+      }
+    })
+    .catch(err => {
+      console.log(`error ${err}`);
+    });
+}
 });
 // Define object with country name to ISO 3166-1 alpha-2 code mappings
 const countryCodes = {
