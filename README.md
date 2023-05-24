@@ -16,6 +16,6 @@ There are two main features:
 2) Search by Name **AND** by Country - The program also lets you search by name and by country, providing more specific results that will allow you to see if a given name has a different average age value from one country to another. 
 
 ## Important Note:
-It's **important to note** that the **Search by Name AND by Country** feature uses the International Standard for Country Codes as defined in ISO 3166-1 alpha-2. We use this to determine the acceptable inputs and formatting for each country. If you are having a problem when you input a specific country into the program, check to see if your country is listed and formatted in the same way as the countries specified at https://agify.io/our-data . The program is designed to convert full country names into country codes, readable by the API. 
+It's **important to note** that the **Search by Name AND by Country** feature uses the International Standard for Country Codes as defined in ISO 3166-1 alpha-2. We use this to determine the acceptable inputs and formatting for each country. If you are having a problem when you input a specific country into the program, check to see if your country is listed and formatted in the same way as the countries specified at https://agify.io/our-data. The program is designed to convert full country names into country codes, readable by the API. 
 
 Otherwise, enjoy! 
