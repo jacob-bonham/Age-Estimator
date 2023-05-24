@@ -1,4 +1,4 @@
-# AGE OF A NAME
+# AGE ESTIMATOR
 Would you like to know the average age associated with a given name, in a given country, for millions of names from around the globe? You've come to the right place.
 
 Link to project: https://jacob-bonham.github.io/Age-of-a-name/
